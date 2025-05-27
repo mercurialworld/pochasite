@@ -27,6 +27,11 @@
     "tailwindcss": "^4.1.3"
   },
   "devDependencies": {
+    "@types/node": "^22.15.23",
+    "aws-cdk": "^2.1016.1",
+    "aws-cdk-lib": "^2.199.0",
+    "chaeri": "github:mercurialworld/chaeri",
+    "constructs": "^10.4.2",
     "tw-animate-css": "^1.3.0"
   }
 }
