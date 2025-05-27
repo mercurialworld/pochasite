@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 // Component Imports
-import Button from '../components/Button.astro';
+import { Button } from "@/components/ui/button";
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
@@ -11,15 +11,14 @@ import Button from '../components/Button.astro';
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href="/pip.png" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
+		<title>pocha.moe</title>
 	</head>
 
 	<body>
 		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
+			Hello, world! This is blank for now.
 		</div>
 	</body>
 </html>
