@@ -57,6 +57,12 @@ jobs:
       - name: Synth AWS-CDK stack
         run: npx cdk synth --ci --no-lookups --strict 
 
+      - name: Upload synth artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: aws-cdk-synth
+          path: cdk.out
+
   deploy-aws-cdk:
     needs: 
       - build-aws-cdk
