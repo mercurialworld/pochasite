@@ -7,6 +7,7 @@ on:
 
 env:
   NODE_VERSION: 22
+  BUN_VERSION: 1.2.5
   CONTAINER_REGISTRY: ghcr.io
 
 jobs:
@@ -19,7 +20,7 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: latest
+          bun-version: ${{ env.BUN_VERSION }}
       
       - name: Install
         run: bun install --frozen-lockfile
@@ -42,7 +43,7 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: latest
+          bun-version: ${{ env.BUN_VERSION }}
       
       - name: Install Bun packages
         run: bun install 
@@ -73,7 +74,7 @@ jobs:
       - name: Setup Bun
         uses: oven-sh/setup-bun@v2
         with:
-          bun-version: latest
+          bun-version: ${{ env.BUN_VERSION }}
       
       - name: Install Bun packages
         run: bun install --frozen-lockfile
