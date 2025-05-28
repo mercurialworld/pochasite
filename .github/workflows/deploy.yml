@@ -52,7 +52,7 @@ jobs:
     
       - name: Install NPM packages
         shell: bash
-        run: npm ci
+        run: npm i
       
       - name: Synth AWS-CDK stack
         run: npx cdk synth --ci --no-lookups --strict 

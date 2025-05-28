@@ -34,8 +34,5 @@
     "aws-cdk-lib": "^2.199.0",
     "constructs": "^10.4.2",
     "tw-animate-css": "^1.3.0"
-  },
-  "trustedDependencies": [
-    "chaeri"
-  ]
+  }
 }
