@@ -48,7 +48,7 @@ jobs:
         run: bun install 
       
       - name: Synth AWS-CDK stack
-        run: bunx cdk synth --ci --no-lookups --strict
+        run: bun cdk synth --ci --no-lookups --strict
 
       - name: Upload synth artifact
         uses: actions/upload-artifact@v4
