@@ -122,6 +122,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: aws-cdk-outputs
+      
+      - name: Download static site
+        uses: actions/download-artifact@v4
+        with:
+          name: build
+          path: codedeploy/html
 
       - name: Parse outputs
         id: parse
