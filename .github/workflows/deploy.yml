@@ -45,17 +45,17 @@ jobs:
         with:
           bun-version: ${{ env.BUN_VERSION }}
       
-      - name: Install Bun packages
-        run: bun install 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+    
+      - name: Install NPM packages
+        shell: bash
+        run: npm ci
       
       - name: Synth AWS-CDK stack
-        run: bun cdk synth --ci --no-lookups --strict
-
-      - name: Upload synth artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: aws-cdk-synth
-          path: cdk.out
+        run: npx cdk synth --ci --no-lookups --strict 
 
   deploy-aws-cdk:
     needs: 

@@ -13,8 +13,10 @@
     "@astrojs/react": "^4.3.0",
     "@radix-ui/react-slot": "^1.2.3",
     "@tailwindcss/vite": "^4.1.3",
+    "@types/bun": "^1.2.15",
     "@types/canvas-confetti": "^1.9.0",
     "@types/react": "^19.1.6",
+    "@types/node": "^22.15.23",
     "@types/react-dom": "^19.1.5",
     "astro": "^5.8.0",
     "canvas-confetti": "^1.9.3",
@@ -28,10 +30,12 @@
     "tailwindcss": "^4.1.3"
   },
   "devDependencies": {
-    "@types/node": "^22.15.23",
     "aws-cdk": "^2.1016.1",
     "aws-cdk-lib": "^2.199.0",
     "constructs": "^10.4.2",
     "tw-animate-css": "^1.3.0"
-  }
+  },
+  "trustedDependencies": [
+    "chaeri"
+  ]
 }
