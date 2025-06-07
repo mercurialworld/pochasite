@@ -1,24 +1,16 @@
 ---
-import '../styles/global.css';
-// Component Imports
-import { Button } from "@/components/ui/button";
+import MainLayout from "../layouts/MainLayout.astro";
 
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+const title = "pocha.moe";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/pip.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>pocha.moe</title>
-	</head>
-
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			Hello, world! This is blank for now.
-		</div>
-	</body>
-</html>
+<MainLayout title={title}>
+<div class="grid place-items-center h-screen content-center text-base-7">
+	<p>Hello, world! I'm <span class="text-sky-700">Pochama</span>. This site is a work in progress.</p>
+	<p>Here are some links in the meantime:</p>
+	<ul class="list-disc">
+		<li><a class="text-blue-600" href="https://github.com/mercurialworld">GitHub</a></li>
+		<li><a class="text-blue-600" href="https://musicpresence.pocha.moe">Music Presence player compatibility</a></li>
+	</ul>
+</div>
+</MainLayout>
