@@ -1,0 +1,10 @@
+---
+import '../styles/global.css';
+import MainLayout from "./MainLayout.astro";
+
+const { pageTitle } = Astro.props;
+---
+
+<MainLayout pageTitle={pageTitle}>
+<slot/>
+</MainLayout>
