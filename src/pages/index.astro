@@ -1,16 +1,27 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import Bio from "../components/Bio.astro";
 
 const pageTitle = "pocha.moe";
 ---
 
 <MainLayout pageTitle={pageTitle}>
-<div class="grid place-items-center h-screen content-center text-base-7">
-	<p>Hello, world! I'm <span class="text-sky-700">Pochama</span>. This site is a work in progress.</p>
-	<p>Here are some links in the meantime:</p>
-	<ul class="list-disc">
-		<li><a class="text-blue-600" href="https://github.com/mercurialworld">GitHub</a></li>
-		<li><a class="text-blue-600" href="https://musicpresence.pocha.moe">Music Presence player compatibility</a></li>
-	</ul>
+<Bio/>
+<br>
+<div class="flex justify-center items-center">
+	<div>
+		<p>This website is still a work in progress, but if you were looking for things I made that you might want to use, here they are.</p>
+		<br>
+		<h2 class="text-2xl lowercase"><a class="underline" href="https://musicpresence.app">Music Presence</a></h2>
+		<ul class="list-disc">
+			<li><a class="text-blue-600" href="https://musicpresence.pocha.moe">Player compatibility</a></li>
+		</ul>
+		<br>
+		<h2 class="text-2xl lowercase"><a class="underline" href="https://theblackparrot.me/overlays">TheBlackParrot's stream overlays</a></h2>
+		<ul class="list-disc">
+			<li><a class="text-blue-600" href="https://github.com/mercurialworld/tbp-overlay-cider-bridge">Now Playing Cider Bridge</a></li>
+			<li><a class="text-blue-600" href="https://github.com/mercurialworld/tbp-overlay-ytm">Now Playing YouTube Music Bridge</a></li>
+		</ul>
+	</div>
 </div>
 </MainLayout>
