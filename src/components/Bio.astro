@@ -1,5 +1,5 @@
 ---
-import { IconBrandGithub, IconBrandLastfm, IconMug } from "@tabler/icons-react";
+import { IconBrandGithub, IconBrandLastfm, IconBrandTwitch, IconMug } from "@tabler/icons-react";
 import { Image } from 'astro:assets';
 import BeatLeader from "./images/BeatLeader.astro";
 ---
@@ -9,14 +9,15 @@ import BeatLeader from "./images/BeatLeader.astro";
 		<Image class="aspect-square scale-50 rounded-full" src="https://github.com/mercurialworld.png" alt="My GitHub icon." inferSize={true} loading="eager" />
 	</div>
 	<div class="text-left flex-2">
-		<h1 class="text-6xl lowercase">Hi, I'm <span class="text-sky-700">Pocha!</span></h1><br>
-		<p>I'm a blue penguin who develops software and administrates systems. I'm someone who tries anything once, even if in the end I never want to use it again.</p>
+		<h1 class="text-6xl lowercase">Hi there!</h1><br>
+		<p>I'm <span class="text-(--secondary)">Pochama</span>, or <span class="text-(--secondary)">Empoleon</span>. I'm a blue penguin who develops and streams. I'm someone who tries anything once, even if in the end I never want to use it again.</p>
 		<p>I like playing rhythm games and playing around with my homeserver. I also like automating things to make my life easier.</p>
 		<br>
-		<div class="flex flex-row">
+		<div class="text-(--accent) flex flex-row">
 			<a href="https://github.com/mercurialworld" title="GitHub" data-tooltip-placement="bottom" aria-label="GitHub logo"><IconBrandGithub size={45}/></a>
 			<a href="https://www.last.fm/user/emperte" title="last.fm" data-tooltip-placement="bottom" aria-label="last.fm logo"><IconBrandLastfm size={45}/></a>
-			<a href="https://beatleader.com/u/pochama" title="BeatLeader" data-tooltip-placement="bottom" aria-label="BeatLeader logo"><BeatLeader/></a>
+			<a href="https://twitch.tv/empoleonics" title="Twitch" data-tooltip-placement="bottom" aria-label="Twitch logo"><IconBrandTwitch size={45}/></a>
+			<a href="https://beatleader.com/u/pochama" title="BeatLeader" data-tooltip-placement="bottom" aria-label="BeatLeader logo"><BeatLeader /></a>
 			<a href="https://coff.ee/mercurialworld" title="Buy Me a Coffee" data-tooltip-placement="bottom" aria-label="A mug to represent tipping via Buy Me a Coffee"><IconMug size={45} /></a>
 		</div>
 	</div>
